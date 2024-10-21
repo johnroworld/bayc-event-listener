@@ -13,7 +13,16 @@
     INFURA_API_KEY = 'your_api_key'
     ```
     **Note: You can use the one in the settings and skip this step. If there are any permission issues, just reach out to me, and I will grant the necessary permissions.**
-   
+3. Create enviroment. In the root of your project (where manage.py is located), create a file named .env and define these variables:
+    ```
+    DEBUG=True
+    APP_NAME='listener'
+    APP_API_KEY='7e8cee53-8a5e-4f50-b322-387c8e6407ef'
+    INFURA_API_KEY='2a34b513d6e14dddb2a07731cea40ab6'
+    WEB3_CONTRACT_ADDRESS='0xBC4CA0eda7647A8ab7C2061c2e118a18a936f13D'
+    ETH_NETWORK_URL='https://mainnet.infura.io/v3'
+    DB_NAME='db.sqlite3'
+    ```
 4. Run migrations:
     ```
     python manage.py migrate
@@ -25,7 +34,7 @@
     ```
     **Note: Please save one of the token IDs from the results for API usage.**
    
-7. Start the Django server:
+6. Start the Django server:
     ```
     python manage.py runserver
     ```

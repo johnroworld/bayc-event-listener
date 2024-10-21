@@ -12,7 +12,7 @@
     ```
     INFURA_API_KEY = 'your_api_key'
     ```
-    **Note: You can use the one in the settings. If there are any permission issues, just reach out to me, and I will grant the necessary permissions.**
+    **Note: You can use the one in the settings and skip this step. If there are any permission issues, just reach out to me, and I will grant the necessary permissions.**
    
 4. Run migrations:
     ```

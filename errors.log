@@ -1,0 +1,37 @@
+Error retrieving transfer history: 'dict' object has no attribute 'token_id'
+Traceback (most recent call last):
+  File "C:\Users\johnr\PythonProjects\bayc_event_listener\listener\views.py", line 21, in get_transfer_history
+    "token_id": event.token_id,
+                ^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'token_id'
+Internal Server Error: /api/transfer-history/1509/
+"GET /api/transfer-history/1509/ HTTP/1.1" 500 34
+Error retrieving transfer history: 'dict' object has no attribute 'token_id'
+Traceback (most recent call last):
+  File "C:\Users\johnr\PythonProjects\bayc_event_listener\listener\views.py", line 21, in get_transfer_history
+    "token_id": event.token_id,
+                ^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'token_id'
+Internal Server Error: /api/transfer-history/1509/
+"GET /api/transfer-history/1509/ HTTP/1.1" 500 34
+Error retrieving transfer history: 'dict' object has no attribute 'from_address'
+Traceback (most recent call last):
+  File "C:\Users\johnr\PythonProjects\bayc_event_listener\listener\views.py", line 21, in get_transfer_history
+    "from_address": event.from_address,
+                    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'from_address'
+Internal Server Error: /api/transfer-history/1509/
+"GET /api/transfer-history/1509/ HTTP/1.1" 500 34
+Error retrieving transfer history: 'dict' object has no attribute 'from_address'
+Traceback (most recent call last):
+  File "C:\Users\johnr\PythonProjects\bayc_event_listener\listener\views.py", line 21, in get_transfer_history
+    "from_address": event.from_address,
+                    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'from_address'
+Internal Server Error: /api/transfer-history/1509/
+"GET /api/transfer-history/1509/ HTTP/1.1" 500 34
+No events found for this token: 222
+No events found for this token: 222
+No events found for this token: 222
+No events found for this token: 222
+No events found for this token: 22222

@@ -67,3 +67,5 @@
 2. Create unit tests.
 3. Use linters like flake8 or pylint for code quality.
 4. It is generally not necessary to save logging settings directly in .env file, log-related variables can store (such as log file paths, log levels, etc. This depends on the collaboration of the developers).
+5. Use PIP and requirements.txt to list all the modules required for this project.
+6. Using Docker and Docker Compose for consistent environments

@@ -23,18 +23,28 @@
     ETH_NETWORK_URL='https://mainnet.infura.io/v3'
     DB_NAME='db.sqlite3'
     ```
-4. Run migrations:
+4. Pre-requisites: If you don't have the necessary modules installed locally, please use the following commands to install them:
+    ```
+    pip install python-dotenv
+    ```
+    ```
+    pip install djangorestframework
+    ```
+    ```
+    pip install web3
+    ```
+5. Run migrations:
     ```
     python manage.py migrate
     ```
     
-5. Fetch transfer events:
+6. Fetch transfer events:
     ```
     python manage.py fetch_transfer_events
     ```
     **Note: Please save one of the token IDs from the results for API usage.**
    
-6. Start the Django server:
+7. Start the Django server:
     ```
     python manage.py runserver
     ```
@@ -44,9 +54,11 @@
     ```
     GET /api/transfer-history/<token_id>/
     ```
-    **Note: 
-        * Use the saved token ID from instruction #4 in the setup.
-        * Enter the following credentials when consuming the GET API: Username: johndoe | Password: pass123$**
+    Sample API Endpoint:
+    ```
+        http://localhost:8000/api/transfer-history/123/
+    ```
+    **Note: Use the saved token ID from instruction #4 in the setup. Enter the following credentials when consuming the GET API: Username: johndoe | Password: pass123$**
 
 
 ## Future Improvements

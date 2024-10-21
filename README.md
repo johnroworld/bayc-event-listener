@@ -1,26 +1,31 @@
 # BAYC NFT Transfer Event Listener
+## Django application that connects to the Ethereum blockchain via Infura to listen for and record transfer events of Bored Ape Yacht Club (BAYC) NFTs.
 
 ## Setup Instructions
 
 1. Clone the repository:
     ```
-    git clone https://github.com/johnroworld/KONG-PYTHON.git
+    git clone https://github.com/johnroworld/bayc-event-listener.git
     ```
+    
 2. Add your Infura API KEY to settings.py:
     ```
     INFURA_API_KEY = 'your_api_key'
     ```
-    Note: You can use mine. If there are any permission issues, just reach out to me, and I will grant the necessary permissions.
-3. Run migrations:
+    **Note: You can use the one in the settings. If there are any permission issues, just reach out to me, and I will grant the necessary permissions.**
+   
+4. Run migrations:
     ```
     python manage.py migrate
     ```
-4. Fetch transfer events:
+    
+5. Fetch transfer events:
     ```
     python manage.py fetch_transfer_events
     ```
-    Note: Please save one of the token IDs to be used in API usage.
-5. Start the Django server:
+    **Note: Please save one of the token IDs from the results for API usage.**
+   
+7. Start the Django server:
     ```
     python manage.py runserver
     ```
@@ -30,10 +35,9 @@
     ```
     GET /api/transfer-history/<token_id>/
     ```
-    Note: 
+    **Note: 
         * Use the saved token ID from instruction #4 in the setup.
-        * Use these credentials when consuming GET API: **username: johndoe | password: pass123$
-
+        * Enter the following credentials when consuming the GET API: Username: johndoe | Password: pass123$**
 
 
 ## Future Improvements
